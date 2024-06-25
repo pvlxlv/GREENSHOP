@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form</title>
+</head>
+<body>
+    <div>
+        <a href="#"><img src="img/ic_close.svg" alt="Close"></a>
+        <div>
+            <a href="#" title="Login">Login</a>
+            <span> | </span>
+            <a href="#" title="Register">Register</a>
+        </div>
+        <p>Enter your email and password to register.</p>
+
+        <form action="#" method="post">
+            <div>
+                <input type="text" name="user_name" placeholder="Username" id="user_name" required>
+            </div>
+            <div>
+                <input type="text" name="user_email" placeholder="Enter your email address" id="user_email" required>
+            </div>
+            <div>
+                <input type="password" name="user_password" placeholder="Password" id="user_password" required>
+                <img src="img/ic_hide.svg" alt="Toggle password visibility">
+            </div>
+            <div>
+                <input type="password" name="user_password_comfirmation" placeholder="Confirm Password" id="user_password_comfirmation" required>
+            </div>
+            <button type="submit">Register</button>
+        </form>
+
+        <p>Or register with</p>
+            <a href="#">
+                <img src="img/ic_google_1.svg" alt="Continue with Google">
+                Continue with Google
+            </a>
+            <a href="#">
+                <img src="img/ic_facebook_1.svg" alt="Continue with Facebook">
+                Continue with Facebook
+            </a>
+    </div>
+</body>
+</html>
