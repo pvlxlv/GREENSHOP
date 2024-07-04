@@ -10,6 +10,7 @@
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 50px;
+    border-bottom: 10px solid #46a358;
 }
 
 .modal .title {
@@ -44,27 +45,39 @@
     color: #3d3d3d;
 }
 
+.modal p:first-of-type {
+    margin-bottom: 16px;
+}
+
+.modal p:last-of-type {
+    text-align: center;
+    margin-bottom: 27px;
+}
+
 .modal form div {
-    margin-top: 16px;
+    margin-bottom: 16px;
+}
+
+.modal form div:last-of-type {
+    margin-bottom: 40px;
 }
 
 .modal form input {
     padding: 12px 14px;
-    max-width: 300px;
-    width: 100%;
+    width: 300px;
+    height: 40px;
     border: 1px solid #eaeaea;
     border-radius: 5px;
-}
-
-.modal form input::placeholder {
     font-weight: 400;
     font-size: 14px;
     line-height: 114%;
+}
+
+.modal form input::placeholder {
     color: #a5a5a5;
 }
 
 .modal button {
-    margin-top: 40px;
     margin-bottom: 36px;
     border-radius: 5px;
     border: none;
@@ -77,13 +90,9 @@
     color: #fff;
 }
 
-.modal p:last-of-type {
-    text-align: center;
-    margin-bottom: 27px;
-}
 
-.modal a.social {
-    margin-top: 15px;
+.link_social {
+    margin-bottom: 15px;
     font-weight: 500;
     font-size: 13px;
     line-height: 123%;
@@ -91,8 +100,14 @@
     color: #727272;
     text-decoration: none;
     max-width: 300px;
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 40px;
     border: 1px solid #eaeaea;
     border-radius: 5px;
+}
+
+.link_social img {
+    margin-right: 8px;
 }
