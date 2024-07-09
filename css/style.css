@@ -185,7 +185,7 @@ header {
 }
 
 .login_btn {
-    font-family: 'cera_promedium';
+    font-family: 'cera_promedium', sans-serif;
     border-radius: 6px;
     background: #46a358;
     padding: 7px 17px;
@@ -246,6 +246,7 @@ header ul a:hover {
 
 .main-banner {
     padding: 68px 40px 85px;
+    margin-bottom: 46px;
     background-image: url("../img/banner_background.png"), linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
     background-repeat: no-repeat;
     background-position: right;
@@ -308,3 +309,34 @@ header ul a:hover {
     background: #3c8f4d;
 }
 
+/*Section Goods*/
+
+.goods_left {
+    background: #FBFBFB;
+    max-width: 310px;
+    height: 774px;
+    padding: 14px 18px;
+}
+
+.goods_left h3 {
+    color: #3D3D3D;
+    font-size: 18px;
+    font-family: 'cera_probold', sans-serif;
+    margin-bottom: 7px;
+}
+
+.goods_left-nav ul {
+    padding-left: 12px;
+}
+
+.goods_left-nav ul li a {
+    text-decoration: none;
+    color: #3D3D3D;
+    font-size: 15px;
+    font-family: 'cera_proregular', sans-serif;
+    line-height: 40px;
+}
+
+.goods_left-nav ul li a:hover, .goods_left-nav ul li a:active {
+    color: #46a358;
+}
