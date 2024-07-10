@@ -245,6 +245,7 @@ header a {
 header ul a {
     font-weight: 400;
     color: #3d3d3d;
+    letter-spacing: 0.2px;
 }
 
 header ul a:hover {
@@ -323,10 +324,22 @@ header ul a:hover {
 
 /*Section Goods*/
 
+/*Goods left*/
+.goods_wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
 .goods_left {
     background: #FBFBFB;
     max-width: 310px;
-    height: 774px;
+    max-height: 1266px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.goods_left-nav {
     padding: 14px 18px;
 }
 
@@ -346,8 +359,123 @@ header ul a:hover {
     color: #3D3D3D;
     font-size: 15px;
     line-height: 40px;
+    display: inline-block;
+    width: 100%;
 }
 
 .goods_left-nav ul li a:hover, .goods_left-nav ul li a:active {
     color: #46a358;
+}
+
+/*Goods right*/
+.goods_right {
+    max-width: 840px;
+}
+
+.goods_filters {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    color: #3D3D3D;
+    margin-bottom: 32px;
+}
+
+.goods_filters-type {
+    display: flex;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.goods_filters-type a {
+    text-decoration: none;
+    line-height: 16px;
+    padding: 7px 0;
+    color: #3D3D3D;
+}
+
+.goods_filters-type a.selected {
+    color: #46a358;
+    font-weight: 700;
+    border-bottom: 2px solid #46A358;
+}
+
+.goods_filters-type a:hover, .goods_items a:hover {
+    color: #46a358;
+}
+
+#goods-controls {
+    color: #3D3D3D;
+    font-size: 15px;
+    border:none;
+    padding: 7px 0;
+}
+
+.goods_items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 70px 33px;
+    margin-bottom: 70px;
+}
+
+.goods_item img {
+    margin-bottom: 12px;
+}
+
+.goods_item a {
+    margin-bottom: 6px;
+    color: #3D3D3D;
+    font-size: 16px;
+    line-height: 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.goods_item p {
+    color: #46A358;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+/*pagination*/
+
+.pagination ul{
+    display: flex;
+    gap: 10px;
+    justify-content: end;
+    margin-bottom: 82px;
+}
+
+.pagination li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #3D3D3D;
+    font-size: 18px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #E5E5E5;
+    border-radius: 4px;
+}
+
+.pagination li a:hover {
+    border: 1px solid #46A358;
+}
+
+.pagination li a.active {
+    border: none;
+    color: #fff;
+    font-weight: 700;
+    background-color: #46A358;
+}
+
+.pagination li.active a {
+    color: #fff;
 }
