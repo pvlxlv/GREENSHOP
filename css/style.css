@@ -496,11 +496,41 @@ header ul li:hover:after {
     top: calc(50%);
 }
 
-.goods_item img {
+.goods_item > img {
     margin-bottom: 12px;
+    width: 258px;
+    height: 300px;
 }
 
-.goods_item a {
+.goods_item ul {
+    display: inline-flex;
+    gap: 10px;
+    position: absolute;
+    top: 250px;
+    left:  calc(50% - 64px);
+    visibility: hidden;
+}
+
+.goods_item:hover ul{
+    visibility: visible;
+}
+
+.goods_item ul li {
+    padding: 8px;
+    background: white;
+    border-radius: 4px;
+}
+
+.goods_item ul a img {
+    width: 20px;
+    height: 20px;
+}
+
+.goods_item ul li:hover {
+    box-shadow: 0 2px 12px rgba(0,0,0, 0.2);
+}
+
+.goods_item .goods_page {
     margin-bottom: 6px;
     color: #3D3D3D;
     font-size: 16px;
@@ -517,7 +547,7 @@ header ul li:hover:after {
 
 /*pagination*/
 
-.pagination ul{
+.pagination ul {
     display: flex;
     gap: 10px;
     justify-content: end;
