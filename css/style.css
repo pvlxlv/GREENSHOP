@@ -457,10 +457,43 @@ header ul li:hover:after {
 
 .goods_item {
     border-top: 1px solid transparent;
+    position: relative;
 }
 
 .goods_item:hover {
     border-top: 1px solid #46a358;
+}
+
+.goods_item.sale > span {
+    padding: 6px 8px;
+    background-color: #46A358;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 100%;
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.goods_item.sale p span {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 89%;
+    color: #a5a5a5;
+    display: inline-block;
+    position: relative;
+    margin-left: 16px;
+}
+
+.goods_item.sale p span:after {
+    content: "";
+    width: 100%;
+    height: 2px;
+    background: #CBCBCB;
+    display: block;
+    position: absolute;
+    top: calc(50%);
 }
 
 .goods_item img {
