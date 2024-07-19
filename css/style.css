@@ -194,7 +194,7 @@ body {
 }
 
 header {
-    padding: 25px 0 12px;
+    margin-bottom: 12px;
 }
 
 .login_btn {
@@ -205,7 +205,6 @@ header {
     display: inline-flex;
     justify-content: center;
     align-items: center;
-    font-weight: 500;
     color: #fff;
 }
 
@@ -228,7 +227,6 @@ header .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 24px;
 }
 
 header ul {
@@ -243,13 +241,40 @@ header a {
 }
 
 header ul a {
-    font-weight: 400;
     color: #3d3d3d;
     letter-spacing: 0.2px;
+    display: inline-block;
 }
 
-header ul a:hover {
-    text-shadow: 0 0 .5px #3d3d3d;
+header ul li {
+    min-width: 80px;
+    font-weight: 400;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 32px 0 24px;
+}
+
+header ul li:after {
+    width: 0;
+    height: 3px;
+    background: #46A358;
+    content: "";
+    display: block;
+    position: relative;
+    top: 24px;
+    transition: .1s ease-in-out;
+}
+
+header ul li:hover a {
+    font-weight: 700;
+}
+
+
+header ul li:hover:after {
+    width: 100%;
 }
 
 .nav-container {
