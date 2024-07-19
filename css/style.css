@@ -259,15 +259,22 @@ header ul a:hover {
 /*banner*/
 
 .main-banner {
-    padding: 68px 40px 85px;
     margin-bottom: 46px;
-    background-image: url("../img/banner_background.png"), linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
-    background-repeat: no-repeat;
-    background-position: right;
+    /*background-image: url("../img/banner_background.png"), linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);*/
+    /*background-repeat: no-repeat;*/
+    /*background-position: right;*/
 }
 
-.main-banner_text-block {
+.main-banner .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-image: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
+}
+
+.main-banner .text-block {
     max-width: 530px;
+    padding: 68px 40px 85px;
     color: #3D3D3D;
 }
 
@@ -289,7 +296,7 @@ header ul a:hover {
     margin-bottom: 5px;
 }
 
-.main-banner_label {
+.main-banner .label {
     font-weight: 500;
     line-height: 114%;
     letter-spacing: 0.1em;
@@ -298,14 +305,14 @@ header ul a:hover {
     margin-bottom: 7px;
 }
 
-.main-banner_description {
+.main-banner .description {
     font-weight: 400;
     line-height: 171%;
     color: #727272;
     margin-bottom: 44px;
 }
 
-.main-banner_btn {
+.main-banner .btn {
     font-weight: 700;
     display: inline-block;
     font-size: 16px;
@@ -322,7 +329,12 @@ header ul a:hover {
     background: #3c8f4d;
 }
 
-/*Section Goods*/
+.main-banner img {
+    width: 507px;
+    height: 450px;
+}
+
+    /*Section Goods*/
 
 /*Goods left*/
 .goods_wrap {
