@@ -148,8 +148,13 @@ body {
     line-height: 114%;
 }
 
-.modal form input::placeholder {
+form input::placeholder {
     color: #a5a5a5;
+}
+
+
+form input:focus {
+    outline: none;
 }
 
 .modal button {
@@ -781,3 +786,226 @@ header .nav_dropdown .nav_dropdown-sub-item:hover:after {
 .post_text .post_link:hover:after {
     background-image: url("../img/ic_arrow_right_blog-hover.svg");
 }
+
+/*features*/
+.features .container {
+    background: #FBFBFB;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.features h3 {
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 94%;
+    color: #3d3d3d;
+    margin-bottom: 10px;
+}
+
+.features .feature {
+    max-width: 235px;
+    min-height: 202px;
+    position: relative;
+    border-right: 1px solid rgba(70, 163, 88, 0.1);
+    padding-right: 30px;
+}
+
+.features .feature:last-of-type {
+    border-right: none;
+}
+
+.feature .feature_content {
+    position: relative;
+    top: 110px;
+}
+
+/*.features .feature:after {*/
+/*    content: "";*/
+/*    width: 1px;*/
+/*    height: 90%;*/
+/*    background-color: rgba(70, 163, 88, 0.1);*/
+/*    display: block;*/
+/*    position: absolute;*/
+/*    top: 5%;*/
+/*    right: -30px;*/
+/*}*/
+
+.features .feature:nth-of-type(1) {
+    background-image: url("../img/feature_01.png");
+    background-repeat: no-repeat;
+}
+
+.features .feature:nth-of-type(2) {
+    background-image: url("../img/feature_02.png");
+    background-repeat: no-repeat;
+}
+
+.features .feature:nth-of-type(3) {
+    background-image: url("../img/feature_03.png");
+    background-repeat: no-repeat;
+    border-right: none;
+}
+
+.features .subscription {
+    max-width: 354px;
+    padding-top: 15px;
+}
+
+.features .subscription h3 {
+    margin-bottom: 25px;
+}
+
+.features .subscription form {
+    margin-bottom: 18px;
+    max-width: 354px;
+    height: 40px;
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: white;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.06);
+}
+
+.features .subscription form input {
+    border: none;
+    width: 74%;
+    height: 40px;
+    font-size: 14px;
+    padding-left: 12px;
+}
+
+.features .subscription form button {
+    border: none;
+    color: white;
+    background-color: #46A358;
+    height: 100%;
+    font-weight: 700;
+    font-size: 18px;
+    width: 24%;
+    border-radius: 0 4px 4px 0;
+}
+
+.features .subscription form button:hover {
+    background-color: #3c8f4d;
+    cursor: pointer;
+}
+
+.features p {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: #727272;
+}
+
+/*contacts*/
+.contacts {
+
+}
+
+.contacts .container {
+    background: linear-gradient(90deg, #edf6ef 0%, #52c368 100%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 157%;
+    color: #3d3d3d;
+}
+
+.contacts .container p {
+    display: inline-flex;
+    align-items: center;
+}
+
+.contacts .container p:before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    margin-right: 8px;
+    display: block;
+}
+
+.contacts .container p:nth-of-type(1):before {
+    background-image: url("../img/ic_location.svg");
+}
+
+.contacts .container p:nth-of-type(2):before {
+    background-image: url("../img/ic_email.svg");
+}
+
+.contacts .container p:nth-of-type(3):before {
+    background-image: url("../img/ic_phone.svg");
+}
+
+/*footer*/
+footer {
+
+}
+
+footer .bottom_nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 32px 24px 24px;
+    margin-bottom: 8px;
+    background: #fbfbfb;
+    border-bottom: 1px solid rgba(70, 163, 88, 0.1);
+}
+
+footer .bottom_nav-block {
+    max-width: 235px;
+    width: 100%;
+}
+
+footer .bottom_social-and-payment {
+    max-width: 354px;
+    width: 100%;
+}
+
+footer .bottom_social-and-payment h4 {
+    margin-bottom: 20px;
+}
+
+footer .bottom_social-and-payment ul {
+    display: inline-flex;
+    gap: 10px;
+    margin-bottom: 32px;
+}
+
+footer .bottom_social-and-payment a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid rgba(70, 163, 88, 0.2);
+    border-radius: 4px;
+}
+
+
+footer h4 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 89%;
+    color: #3d3d3d;
+    margin-bottom: 8px;
+}
+
+footer a {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 214%;
+    color: #3d3d3d;
+    text-decoration: none;
+}
+
+footer .rights {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 214%;
+    color: #3d3d3d;
+    text-align: center;
+    margin-bottom: 16px;
+}
+
