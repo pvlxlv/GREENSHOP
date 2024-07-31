@@ -73,6 +73,13 @@ body {
     padding-right: 100px;
     padding-bottom: 50px;
     border-bottom: 10px solid #46a358;
+    position: relative;
+}
+
+.modal .close_form {
+    position: absolute;
+    top: 12px;
+    right: 12px;
 }
 
 .modal .title {
@@ -132,6 +139,7 @@ body {
 
 .modal form div {
     margin-bottom: 16px;
+    position: relative;
 }
 
 .modal form div:last-of-type {
@@ -152,6 +160,25 @@ form input::placeholder {
     color: #a5a5a5;
 }
 
+.modal form input[type=password]::placeholder {
+    letter-spacing: 0;
+}
+
+.modal form input[type=password] {
+    letter-spacing: 4px;
+}
+
+.modal form input[type=password] + img {
+    padding: 10px;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    cursor: pointer;
+}
+
+.modal form input:focus {
+    border: 1px solid #46A358;
+}
 
 form input:focus {
     outline: none;
@@ -168,6 +195,11 @@ form input:focus {
     font-size: 16px;
     line-height: 100%;
     color: #fff;
+    cursor: pointer;
+}
+
+.modal button:hover {
+    background: #3c8f4d;
 }
 
 
@@ -341,7 +373,8 @@ header .nav_dropdown .nav_dropdown-sub-item:hover:after {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-image: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
+    background: #FBFBFB;
+    background: linear-gradient(135deg, rgba(245, 245, 245, 0.5) 0%, rgba(245, 245, 245, 0.5) 100%);
 }
 
 .main-banner .text-block {
@@ -397,7 +430,7 @@ header .nav_dropdown .nav_dropdown-sub-item:hover:after {
     border-radius: 6px;
 }
 
-.main-banner_btn:hover {
+.main-banner .btn:hover {
     background: #3c8f4d;
 }
 
@@ -864,6 +897,10 @@ header .nav_dropdown .nav_dropdown-sub-item:hover:after {
     overflow: hidden;
     background-color: white;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.06);
+}
+
+.features .subscription form:hover {
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.08);
 }
 
 .features .subscription form input {

@@ -5,9 +5,12 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/style.css">
     <title>GREENSHOP</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <link rel="stylesheet" href="css/style.css">
+
 </head>
 <body>
 <header>
@@ -31,7 +34,7 @@
                 <li><a href="#">Blogs</a></li>
             </ul>
         </nav>
-        <a href="#" class="login_btn">
+        <a href="registration.html" class="login_btn">
             Login
         </a>
     </div>
@@ -342,7 +345,7 @@
         <div class="container">
             <h2>Our Blog Posts</h2>
             <p>We are an online plant shop offering a wide range of cheap and trendy plants. </p>
-            <div class="blog_posts">
+            <div class="blog_posts owl-carousel">
                 <article class="blog_post">
                     <img src="img/blog_post_01.jpg" alt="Blog post article image">
                     <div class="post_text">
@@ -391,6 +394,19 @@
                         </p>
                         <h3>Best Houseplants Room by Room</h3>
                         <p class="post_description">The benefits of houseplants are endless. In addition to..</p>
+                        <a class="post_link" href="#">Read More</a>
+                    </div>
+                </article>
+
+                <article class="blog_post">
+                    <img src="img/blog_post_01.jpg" alt="Blog post article image">
+                    <div class="post_text">
+                        <p class="post_metadata">
+                            <span class="post_metadata_date">September 12</span>
+                            <span class="post_metadata_read-time">Read in 6 minutes</span>
+                        </p>
+                        <h3>Cactus & Succulent Care Tips</h3>
+                        <p class="post_description">Cacti are succulents are easy care plants for any home or patio.</p>
                         <a class="post_link" href="#">Read More</a>
                     </div>
                 </article>
@@ -485,5 +501,8 @@
         <p class="rights">© 2021 GreenShop. All Rights Reserved.</p>
     </div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+<script src="scripts/owl.carousel.js"></script>
+<script src="scripts/scripts.js"></script>
 </body>
 </html>
