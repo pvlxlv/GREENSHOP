@@ -62,6 +62,21 @@
 body {
     font-family: 'Cera Pro', sans-serif;
     position: relative;
+    animation: 2s linear show_scrollbar forwards;
+}
+
+@keyframes show_scrollbar {
+    0% {
+        overflow-Y: hidden;
+    }
+
+    90% {
+        overflow-Y: hidden;
+    }
+
+    100% {
+        overflow-Y: scroll;
+    }
 }
 
 /*.preloader {*/
