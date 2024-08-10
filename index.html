@@ -10,19 +10,20 @@
     <link rel="stylesheet" href="css/owl.carousel.css">
     <link rel="stylesheet" href="css/owl.theme.default.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 
 </head>
 <body>
-<div class="preloader">
-    <img src="img/logo_green-shop.svg" alt="">
-</div>
+<!--<div class="preloader">-->
+<!--    <img src="img/logo_green-shop.svg" alt="">-->
+<!--</div>-->
 <header>
     <div class="container nav-container">
-        <a href="index.html" title="Green Shop logo">
+        <a class="logo" href="index.html" title="Green Shop logo">
             <img src="img/logo_green-shop.svg" alt="logo">
         </a>
 <!--error with prev commit-->
-        <nav>
+        <nav class="nav_main-container">
             <ul class="nav_main">
                 <li><a href="#">Home</a></li>
                 <li><a href="#">Shop</a></li>
@@ -37,9 +38,13 @@
                 <li><a href="#">Blogs</a></li>
             </ul>
         </nav>
-        <a href="registration.html" class="login_btn">
-            Login
-        </a>
+
+        <div class="burger-nav">
+            <a href="registration.html" class="login_btn">
+                Login
+            </a>
+            <img class="burger-menu-icon" src="img/ic_menu.svg" alt="menu">
+        </div>
     </div>
 </header>
 <main>
